@@ -30,6 +30,8 @@ python scripts/iterate.py compare INPUT.docx trial-output/INPUT.docx
 
 ## 用 Word 检查实际更新结果
 
+批次工具的 `export` 生成可读的工作副本。小修可将它放在工作区，完成内容及适用的原生检查后，把已核验文件的路径和哈希写进累计记录。下一项修改在该文件上重新取锚点、开新批次；同一项断点续跑仍用原计划和存储目录。正式发布从累计记录选取已核验的最新稿，逐项确认已纳入发布范围。
+
 在装有 Microsoft Word 的 Windows 中用 PowerShell 7。`-Inputs` 仅指本次已导出的工作副本；使用与输入父目录不重叠的新输出目录。Word 只打开核验副本。遇到需要外部取数的域或外链资源先报告，走隔离、已授权的专用流程，避免自动更新外部内容。
 
 ```powershell
